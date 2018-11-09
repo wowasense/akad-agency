@@ -1,7 +1,51 @@
 extends base/base
 
+block vars
+  - var page = 'homepage'
+
 block title
+  | Homepage
   
 
 block content
-  
+  .container
+    include blocks/title-section
+    section.features-section.row
+      h2.__title Features
+      .features-block.__block.col-md-5
+        .feature-block.__feature-block
+          .__icon
+          .__title unlimited options
+          ul.feature-list.__list
+            li.__item Branding
+            li.__item Design & Copywriting
+            li.__item Concept development
+            li.__item User Experience
+        .feature-block.__feature-block
+          .__icon
+          .__title design & development
+          ul.feature-list.__list
+            li.__item Information architecture
+            li.__item Interface design
+            li.__item Product Design
+            li.__item Integrated ad Companies
+        .feature-block.__feature-block
+          .__icon
+          .__title e-commerce
+          ul.feature-list.__list
+            li.__item Prototyping
+            li.__item Technical Consulting
+            li.__item Web applications
+            li.__item Quality testing
+        .feature-block.__feature-block
+          .__icon
+          .__title customizable design
+          ul.feature-list.__list
+            li.__item Information architecture
+            li.__item Interface design
+            li.__item Product Design
+            li.__item Integrated ad Companies
+                
+      .features.__img-block.img-responsive.col-md-5.offset-1
+        img(src="img/homepage/workspace.jpg").__img
+      

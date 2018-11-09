@@ -1,0 +1,48 @@
+.top-title-block
+  margin-top: 10rem
+  text-align: center
+  &__title
+    position: relative
+    border: 10px solid $text
+    padding: 5px
+    font-family: Montserrat
+    text-transform: uppercase
+    font-size: 48px
+    font-weight: bold
+    color: $text
+    &:before
+      content: "we're"
+      position: absolute
+      top: -43px
+      padding: 2px 15px
+      background-color: $accent
+      font-size: 18px
+  &__text
+    margin-top: 2rem
+
+.top-block__wrapper
+  margin-top: 8rem
+
+.top-content
+  margin-top: 1rem
+  &__title
+    position: relative
+    z-index: 0
+    text-transform: uppercase
+    font-size: 29px
+    font-weight: bold
+    font-family: Montserrat
+    &:before
+      z-index: -1
+      content: ""
+      position: absolute
+      bottom: 5px
+      width: 67px
+      height: 21px
+      background-color: $accent
+  &__text
+    margin-top: .5rem
+    line-height: (30 / 16)
+  &__btn
+    margin-top: .5rem
+    width: 165px

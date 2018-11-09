@@ -1,0 +1,25 @@
+.header-block
+  &__logo
+    color: $text
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+    font-family: Montserrat
+  &__menu
+    position: relative
+    margin-top: 5px
+    background: url("../img/sprites/sprites.png") no-repeat -10px -15px
+    width: 31px
+    height: 15px
+.list
+  display: none
+  position: absolute
+  right: 10px
+  list-style: none
+  &__item
+    padding: 10px
+    & a:hover
+      color: $accent
+      text-decoration: none
+.menu:hover > .list
+  display: block

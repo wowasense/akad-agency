@@ -1,0 +1,17 @@
+if page === 'homepage'
+  div(class="top-block top-block_"+page+" row justify-content-center")
+    .top-title-block.col-md-6
+      .__title.d-flex.flex-column.align-items-center Creative agency
+      .__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .top-block__wrapper.row
+      .top-img.col-md-5
+        img(src="img/homepage/table.jpg").top-img__img.img-responsive
+      .top-content.col-md-6.offset-md-1.d-flex.flex-column
+        .__title History of agency
+        .__text Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+        .button.--c-accent.--f-bold.__btn.align-self-end Read more 
+        
+else
+  div(class="top-block top-block_"+page+" row justify-content-center")
+    .__title #{page}
+  

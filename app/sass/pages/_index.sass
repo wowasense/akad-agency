@@ -1,7 +1,46 @@
-.block-column
-	
-	&__block
-		&1
-			border: 1px solid black
-		&2
-			border: 1px solid black
+// Блоки
+@import "blocks/buttons/button"
+@import "blocks/header"
+@import "blocks/footer"
+@import "blocks/top-wrapper"
+@import "blocks/top-block"
+@import "blocks/title-section"
+
+.features-section
+  &__title
+    display: none
+
+.feature-block
+  &:nth-child(1)
+    .feature-block__icon
+      background: url("../img/sprites/sprites.png") no-repeat -58px -62px
+      width: 53px
+      height: 23px
+      zoom: .6;
+  &:nth-child(2)
+    .feature-block__icon
+      background: url("../img/sprites/sprites.png") no-repeat -14px -59px
+      width: 28px
+      height: 28px
+  &:nth-child(3)
+    .feature-block__icon
+      background: url("../img/sprites/sprites.png") no-repeat -13px -109px
+      width: 28px
+      height: 28px
+  &:nth-child(4)
+    .feature-block__icon
+      background: url("../img/sprites/sprites.png") no-repeat -129px -62px
+      width: 53px
+      height: 40px
+      zoom: .6;
+  &__title
+    font-family: Montserrat
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: bold
+  &__list
+    list-style: none
+    font-size: 14px
+    text-transform: uppercase
+    color: $gray1
+    line-height: (30 / 14)

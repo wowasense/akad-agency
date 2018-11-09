@@ -1,14 +1,20 @@
 doctype html
-html(lang="ru-RU")
+html(lang="en")
+  block vars
   head
     title
+      | AKAD - 
       block title
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     block links
     link(href="css/main.min.css" rel="stylesheet")      
   body
-    include ../blocks/header.pug
-    block content
-    include ../blocks/footer.pug
+    div(class="top-wrapper top-wrapper_"+page)
+      .container
+        include ../blocks/header
+        include ../blocks/top
+    main.main    
+      block content
+    include ../blocks/footer
     block scripts

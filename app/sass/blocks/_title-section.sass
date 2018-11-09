@@ -1,0 +1,25 @@
+.why-choose-us
+  margin-top: 15rem
+
+.title-section
+  text-align: center
+  &__title
+    text-transform: uppercase
+    font-size: 29px
+    line-height: (48 / 30)
+    font-family: Montserrat
+    font-weight: bold
+    .title-span
+      position: relative
+      z-index: 0
+      &:before
+        z-index: -1
+        content: ""
+        position: absolute
+        top: 16px
+        width: 100%
+        height: 21px
+        background-color: $accent
+
+  &__text
+    font-size: 14px
