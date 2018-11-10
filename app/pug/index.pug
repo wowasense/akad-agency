@@ -9,10 +9,10 @@ block title
 
 block content
   .container
-    include blocks/title-section
-    section.features-section.row
+    +title-section('why-choose-us', 'why', ' choose us')
+    section.features-section.row.justify-content-between
       h2.__title Features
-      .features-block.__block.col-md-5
+      .features-block.__block.col-md-6.row.align-self-end
         .feature-block.__feature-block
           .__icon
           .__title unlimited options
@@ -44,8 +44,8 @@ block content
             li.__item Information architecture
             li.__item Interface design
             li.__item Product Design
-            li.__item Integrated ad Companies
-                
-      .features.__img-block.img-responsive.col-md-5.offset-1
+            li.__item Integrated ad Companies    
+      .features.__img-block.img-responsive
         img(src="img/homepage/workspace.jpg").__img
+    +title-section('our-portfolio', 'our', ' portfolio')
       

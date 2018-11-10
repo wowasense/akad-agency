@@ -1,0 +1,5 @@
+mixin title-section(className, span, title)
+  - var text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  section.title-section(class=className).row.flex-column.align-items-center
+    h2.title-section__title <span class="title-span">#{span}</span>#{title}
+    .__text.col-md-8 #{text}
