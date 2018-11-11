@@ -1,0 +1,15 @@
+section.portfolio-section.row.justify-content-between
+  aside.portfolio-categories.col-md-2
+    .__title Choose category
+    ul.portfolio-list.__list
+      li.__item.--active
+        a(href="#") All
+      each val in ['Webdesign', 'Graphic design', 'Fashion', 'Logo design', 'Advertising']  
+        li.__item
+          a(href="#")= val
+  .portfolio-gallery.col-md-9
+    each val in ['5', '6', '7', '8', '9', '10', '11', '13', '14']
+      .img-block
+        img(src="/img/homepage/gallery/Layer_"+val+".png").img
+    
+  

@@ -1,0 +1,71 @@
+.portfolio-section
+  margin-top: 7rem
+
+.portfolio-categories
+  padding-left: 0
+  font-family: Montserrat
+  font-weight: bold
+  text-transform: uppercase
+  &__title
+    font-size: 30px
+    line-height: (48 / 30)
+  &__list
+    margin-top: 1.5rem
+
+.portfolio-list
+  padding: 0
+  &__item
+    padding-left: 19px
+    padding-bottom: 15px
+    a
+      text-decoration: none
+      font-size: 14px
+    a:hover
+      color: $accent
+    &_active
+      padding-left: 0
+      padding-bottom: 19px
+    &_active a
+      background-color: $accent
+      color: $white
+      padding: 2px 20px
+      &:hover
+        color: $white
+
+.portfolio-gallery
+  display: grid
+  grid-template-columns: 264px 264px 261px
+  grid-template-rows: 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px 24px
+  grid-gap: 26px
+  .img-block
+    &:nth-child(1)
+      grid-column: 1 / 2
+      grid-row: 1 / 5
+    &:nth-child(2)
+      grid-column: 2 / 3
+      grid-row: 1 / 5
+    &:nth-child(3)
+      grid-column: 3 / 4
+      grid-row: 1 / 9
+    &:nth-child(4)
+      grid-column: 1 / 2
+      grid-row: 5 / 10
+    &:nth-child(5)
+      grid-column: 2 / 3
+      grid-row: 5 / 13
+    &:nth-child(6)
+      margin-top: 10px
+      grid-column: 3 / 4
+      grid-row: 9 / 13
+    &:nth-child(7)
+      margin-top: 40px
+      grid-column: 1 / 2
+      grid-row: 10 / 14
+    &:nth-child(8)
+      margin-top: 40px
+      grid-column: 3 / 4
+      grid-row: 12 / 16
+    &:nth-child(9)
+      margin-top: 16px
+      grid-column: 2 / 3
+      grid-row: 13 / 18
