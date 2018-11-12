@@ -1,0 +1,9 @@
+footer.footer.row.justify-content-between
+  ul.__list.col-md-6.d-flex.justify-content-between
+    each val, index in {'index': 'Home', 'about-us': 'About us', 'services': 'Services', 'portfolio': 'Portfolio', 'blog': 'Blog', 'contact-us': 'Contact us'}
+      li.__list-item
+        a(href=index+".html") #{val}
+      span -
+  .__copyright.col-md-4 Created by akhouad 2016. All Rights Reserved
+  .__social-links.col-12.d-flex.justify-content-end
+    .links-img
