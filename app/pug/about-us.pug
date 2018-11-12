@@ -1,11 +1,56 @@
 extends base/base
 
 block vars
-  - var page = 'about-us'
+  - 
+    var title = 'About us'
+    page = 'about'
 
 block title
-  | About us
+  | #{title}
   
 
 block content
-  
+  .container
+    section.text-block-double-section.row
+      .text-block.col-md-6  
+        .__title <span class="title-span">abo</span>ut us
+        .__title-two We are awesome
+        .__text.
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      .text-block.col-md-6  
+        .__title <span class="title-span">wh</span>at we do
+        .__title-two Creative & Digital
+        .__text.
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    +title-section('some-benefits', 'som', 'e benefits')
+    .features-about-section.row
+      each block in [{title: "fully responsive", text: ""}, {title: "unlimited options"}, {title: "wordpress"}, {title: "e-commerce"}, {title: "customizable design"}, {title: "support"}]
+        .feature-about-block.__block.col-md-4
+          .__icon-block
+            .__icon
+          .__title= block.title
+          .__text Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.  
+    +title-section('the-dream-team', 'the ', 'dream team')
+    .team-gallery-block.row
+      each person in [['5', 'person1'], ['6', 'person2'], ['7', 'person3'], ['8', 'person4'], ['9', 'person5'], ['10', 'person6'], ['11', 'person7'], ['12', 'person8']]
+        .__person.col-sm-6.col-md-4.col-lg-3
+          img(src="img/about-us/persons/Layer_"+person[0]+".jpg" alt=person[1]).__person-img
+    .quote-block.row.justify-content-around.align-items-center
+      .__text.col-md-9 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      .button.button_c-accent.button_f-bold.__btn Read more
+    section.portfolio-slider-section.row
+      h2.__title Portfolio John Doe
+      .portfolio-person.__portfolio-person.col-md-6
+        .__icon
+        .__text Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus, gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
+        .__name-block John Doe
+        .btns-slider.__btns-slider
+          .__btn.--active
+          .__btn
+          .__btn
+          .__btn
+      .gallery-person.__gallery-person.col-md-6
+        - for (var img = 14; img <= 19; img++)
+          .__img-block
+            img(src="img/about-us/Layer_"+img+".png").__img
+  include blocks/newsletter-section  

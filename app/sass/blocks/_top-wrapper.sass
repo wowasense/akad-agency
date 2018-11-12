@@ -1,6 +1,13 @@
 .top-wrapper
   padding-top: 3rem
+  background-repeat: no-repeat
+  background-size: cover
+  z-index: 1
   &_homepage
-    background: url('../img/homepage/top-bg.jpg') no-repeat
-    background-size: cover
+    background-image: url('../img/homepage/top-bg.jpg')
     height: 850px
+  &_about, &_services, &_portfolio, &_contact
+    background-image: url('../img/top-pages-bg.jpg')
+
+  &_blog
+    background-image: url('../img/top-pages-bg-bw.jpg')
