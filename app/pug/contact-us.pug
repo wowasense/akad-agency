@@ -10,4 +10,25 @@ block title
   
 
 block content
-  
+  .container
+    section.contact-us-section
+      h2.__title Contact us
+      .contact-us-block.row
+        .contact.__contact.col-md-6
+          form(action="#").contact-form.__form
+            input(placeholder="your name").__name
+            input(type="email" placeholder="your email").__email
+            input(placeholder="object").__object
+            textarea(placeholder="message").__message
+            button(type="submit").button.--c-accent.--f-bold.__btn Send
+          .contact-info.__contact-info
+            .__title Contact info
+            .__text Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia dolorum conse.
+            .__address 13D, Functional apartment, Unique colony, Agadir 86360
+            .__phone-one +212 124-566-780
+            .__phone-two +212 124-566-780
+            .__email email@website.com
+            .__social
+        .__map.col-md-6
+          .__map-img.img-responsive
+  include blocks/newsletter-section
