@@ -2,11 +2,43 @@ extends base/base
 
 block vars
   - 
-    var title = 'Services'
+    var title = 'Our Services'
     page = 'services'
 
 block title
   | #{title}
 
 block content
+  .container
+    +title-section('what-we-do', 'wha', 't we do')
+    section.benefits-section.row
+      h2.__title What we do
+      .benefits-info.col-md-6
+        .__text Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+        ul.__list
+          each li in ['Stunning on all screens', 'Easy to customize', 'Make a difference', 'Imagine and create', 'Unlimited possibilities']
+            li.__list-item= li
+        ul.__list
+          each li in ['Remarkable style', 'Captivating presentations', 'Make your portfolio pop', 'Words that matter', 'Satisfied clients']
+            li.__list-item= li
+      .benefits-img.col-md-6
+        img(src="img/services/benefits.jpg").__img.img-responsive
+      .benefits-blocks.row.align-items-end
+        each block in ['Keep pulse going', 'Pass the limits', 'Great ideas', 'Awesome support']
+          .__block.col-md-3
+            .__icon
+            .__title= block
+            .__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+    +title-section('pricing-plans', 'pric', 'ing plans')
+    section.pricing-section.row.justify-content-between
+      h2.__title Pricing
+      each block in [['basic', '$35.99', 'pricing-block_active'], ['advanced', '$55.99', ''], ['smart', '$75.99', '']]
+        div(class="pricing-block "+block[2])
+          .pricing-block__title= block[0]
+          .pricing-block__price #{block[1]} monthly
+          ul.pricing-block__list
+            each li in ['Lorem ipsum dolor sit amet', 'Consectetuer adipiscing elit', 'Sed diam nonummy', 'Nibh euismod tincidunt', 'Ut laoreet dolore', 'Magna aliquam erat volutpat']
+              li.pricing-block__list-item= li
+          .button.--c-accent.pricing-block__btn Get started
+  include blocks/newsletter-section  
   

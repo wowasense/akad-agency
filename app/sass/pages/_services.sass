@@ -1,0 +1,114 @@
+.benefits-section
+  margin-top: 6rem
+  &__title
+    display: none
+
+.benefits-info
+  display: flex
+  flex-wrap: wrap
+  font-size: 14px
+  line-height: (30 / 14)
+  &__list
+    margin-top: 2rem
+    margin-right: 5rem
+    padding: 0
+    list-style-image: url('../img/services/list-icon.png')
+    list-style-position: inside
+
+.benefits-blocks
+  margin-top: 9rem
+  &__block
+    text-align: center
+    &:nth-child(1)
+      .benefits-blocks__icon
+        background-position: -55px -3px
+        width: 53px
+        height: 48px
+    &:nth-child(2)
+      .benefits-blocks__icon
+        background-position: -58px -62px
+        width: 53px
+        height: 23px
+    &:nth-child(3)
+      .benefits-blocks__icon
+        background-position: -124px -3px
+        width: 35px
+        height: 53px
+    &:nth-child(4)
+      .benefits-blocks__icon
+        background-position: -129px -62px
+        width: 53px
+        height: 40px
+  &__icon
+    position: relative
+    margin: 0 auto
+    background-image: url('../img/sprites/sprites.png')
+    background-repeat: no-repeat
+    &:before
+      content: ""
+      position: absolute
+      width: 50px
+      height: 20px
+      left: -10px
+      bottom: 0
+      background-color: $accent
+      z-index: -1
+  &__title
+    margin-top: 1.5rem
+    font-family: Montserrat
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: (30 / 18)
+  &__text
+    font-size: 14px
+    line-height: (30 / 14)
+
+.pricing-section
+  margin-top: 6rem
+  &__title
+    display: none
+
+.pricing-block
+  position: relative
+  width: 360px
+  border-top: 5px solid $accent
+  padding: 30px
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    background: url('../img/services/triangle.png') no-repeat
+    background-size: contain
+    width: 15px
+    height: 15px
+    zoom: .7
+  &_active
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.25)
+  &__title
+    font-size: 30px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: (48 / 30)
+  &__price
+    margin-top: .5rem
+    text-align: center
+    width: 165px
+    background-color: $accent
+    color: $white
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 14px
+    font-family: Montserrat
+    line-height: (32 / 14)
+  &__list
+    margin-top: 2rem
+    padding: 0
+    list-style-image: url('../img/services/list-icon.png')
+    list-style-position: inside
+    font-size: 14px
+    line-height: (36 / 14)
+  &__btn
+    margin-top: 2rem
+    width: 135px
