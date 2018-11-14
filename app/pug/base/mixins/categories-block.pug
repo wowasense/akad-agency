@@ -1,0 +1,7 @@
+mixin categories-block(title)
+  .categories-block.blog-aside__categories-block
+    .__title= title
+    each category in [['Business', '15'], ['Photography', '17'], ['Journal', '22'], ['Web development', '30']]
+      .category.__category
+        .__text= category[0]
+        .__num= category[1]

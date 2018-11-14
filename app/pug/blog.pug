@@ -9,4 +9,49 @@ block title
   | #{title}
 
 block content
+  .container
+    section.blog-section.row
+      h2.__title Blog
+      .blog-posts.__posts.col-md-8.justify-content-between
+        - for (var n= 0; n<3; n++)
+          .post.__post
+            .post-img.__img-block
+              img(src="img/blog/mountain.jpg" alt="mountain").__img.img-responsive
+            .post-data.__data
+              .__date October 13, 2015
+              .data-comments.__comments
+                .__icon
+                .__num 8
+              .data-likes.__likes
+                .__icon
+                .__num 15
+            .__title The big leagues our turn straightnin
+            .__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            a(href="#").post-link.__link
+              .__text Continue reading
+              .__icon
+      aside.blog-aside.__aside.col-md-3.offset-1
+        form(action="#").search-form.__search-form
+          input(placeholder="search...").__input
+          button(type="submit").__btn
+        .aside-posts.__posts
+          .__title Posts
+          .slider-categories.__slider-categories
+            .__text.--active Latest
+            each category in ['Popular', 'Comments']
+              .__text= category
+          - for (var n= 0; n<3; n++)
+            .post-miniature.__post-miniature
+              .__img
+              .post-miniature-text.__text
+                .__title Magna mollis ultricies
+                .__date 3th oct 2012
+        +categories-block('categories')
+        .tags-block.__tags-block
+          .__title Tags
+          .__wrapper
+            each tag in ['css', 'javascript', 'jquery', 'html5', 'bootstrap', 'css', 'javascript', 'jquery']
+              .__tag= tag
+        +categories-block('archives')
+  include blocks/newsletter-section
   

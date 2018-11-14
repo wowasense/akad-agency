@@ -1,0 +1,183 @@
+.blog-section
+  margin-top: 10rem
+  &__title
+    display: none
+  &__posts
+  &__aside
+
+.post
+  margin-bottom: 6rem
+  font-family: Montserrat
+  &__title
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 18px
+    line-height: (48 / 18)
+  &__text
+    font-size: 14px
+    font-family: Open Sans
+    color: $gray1
+  &__link
+    margin-top: 1rem
+    display: flex
+    align-items: center
+    .post-link__text
+      margin-right: .3rem
+      font-size: 14px
+      font-weight: bold
+      text-transform: uppercase
+      line-height: (24 / 14)
+    .post-link__icon
+      background: url('../img/blog/link-icon.png') no-repeat
+      width: 10px
+      height: 11px
+.post-data
+  margin-top: 2rem
+  display: flex
+  font-size: 14px
+  &__date
+    margin-right: 1rem
+    width: 165px
+    background-color: $accent
+    color: $white
+    font-weight: bold
+    text-transform: uppercase
+    padding: 5px 10px
+  &__comments
+    display: flex
+    align-items: center
+    margin-right: 1rem
+    .data-comments__icon
+      margin-right: .5rem
+      background: url('../img/sprites/sprites.png') no-repeat
+      background-position: -125px -120px
+      width: 15px
+      height: 16px
+    .data-comments__num
+      color: #cccccc
+  &__likes
+    display: flex
+    align-items: center
+    .data-likes__icon
+      margin-right: .5rem
+      background: url('../img/sprites/sprites.png') no-repeat
+      background-position: -73px -120px
+      width: 16px
+      height: 14px
+    .data-likes__num
+      color: #cccccc
+
+.search-form
+  background-color: #ececec
+  padding: 7px 15px
+  &__input
+    width: 206px
+    background: none
+    border: none
+    font-family: Montserrat
+    text-transform: uppercase
+    font-weight: bold
+    opacity: .5
+    font-size: 12px
+  &__btn
+    background: none
+    border: none
+    background: url('../img/blog/find-icon.png') no-repeat
+    width: 14px
+    height: 14px
+
+.aside-posts
+  margin-top: 2rem
+  font-family: Montserrat
+  text-transform: uppercase
+  font-weight: bold
+  &__title
+    font-size: 14px
+    line-height: (48 / 14)
+  &__slider-categories
+    display: flex
+    text-align: center
+    font-size: 12px
+    line-height: (48 / 12)
+
+.slider-categories
+  &__text
+    flex-grow: 1
+    color: $gray1
+    border-bottom: 2px solid #e6e6e6
+    &_active
+      color: $text
+      border-bottom: 2px solid $accent
+
+// Why 3???
+.post-miniature
+  margin-top: 2rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &:nth-child(3)
+    .post-miniature__img
+      background-image: url('../img/blog/mini_1.jpg')
+  &:nth-child(4)
+    .post-miniature__img
+      background-image: url('../img/blog/mini_2.jpg')
+  &:nth-child(5)
+    .post-miniature__img
+      background-image: url('../img/blog/mini_3.jpg')
+  &__img
+    background-repeat: no-repeat
+    width: 82px
+    height: 81px
+
+.post-miniature-text
+  width: 160px
+  &__title
+    font-size: 14px
+    line-height: (18 /14)
+  &__date
+    font-size: 12px
+    font-family: Open Sans
+    color: #9a9a9a
+    text-transform: none
+    font-weight: 400
+
+.categories-block
+  margin-top: 2rem
+  &__title
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    line-height: (48 / 14)
+  &__category
+    display: flex
+    font-size: 14px
+    font-family: Open Sans
+    line-height: (48 / 14)
+    padding: 0 15px
+    border-bottom: 1px solid #bfbfbf
+    .category__text
+      flex-grow: 1
+    .category__num
+
+.tags-block
+  margin-top: 2rem
+  font-family: Montserrat
+  font-weight: bold
+  text-transform: uppercase
+  &__title
+    font-size: 14px
+    line-height: (48 / 14)
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+  &__tag
+    &:nth-child(5)
+      margin-right: 1rem
+    padding: 5px 14px
+    margin-bottom: .3rem
+    margin-right: .3rem
+    text-align: center
+    color: #999999
+    font-size: 12px
+    background-color: #e5e5e5
